@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/repeatingpizza"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textViewEditHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:autoSizeTextType="uniform"
+        android:background="#B4FFEB3B"
+        android:gravity="center"
+        android:text="Edit" />
+
+    <EditText
+        android:id="@+id/editTextNameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/textViewToppingsHeader2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:autoSizeTextType="uniform"
+        android:background="#B4FFEB3B"
+        android:gravity="center"
+        android:text="@string/textViewSize" />
+
+    <EditText
+        android:id="@+id/editTextSize"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Size" />
+
+    <TextView
+        android:id="@+id/textViewToppingsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:autoSizeTextType="uniform"
+        android:background="#B4FFEB3B"
+        android:gravity="center"
+        android:text="@string/textViewToppings" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/textViewCheese2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:autoSizeTextType="uniform"
+            android:background="#B2FF9800"
+            android:gravity="center"
+            android:text="Cheese"
+            app:cornerRadius="20dp" />
+    </TableRow>
+
+    <EditText
+        android:id="@+id/editTextTopping1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Topping1" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/textViewPepp2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:autoSizeTextType="uniform"
+            android:background="#B2FF9800"
+            android:gravity="center"
+            android:text="Pepperoni"
+            app:cornerRadius="20dp" />
+    </TableRow>
+
+    <EditText
+        android:id="@+id/editTextTopping2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Topping2" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/textViewOlives2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:autoSizeTextType="uniform"
+            android:background="#B2FF9800"
+            android:gravity="center"
+            android:text="Olives"
+            app:cornerRadius="20dp" />
+    </TableRow>
+
+    <EditText
+        android:id="@+id/editTextTopping3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Topping3" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/textViewSausa2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:autoSizeTextType="uniform"
+            android:background="#B2FF9800"
+            android:gravity="center"
+            android:text="Sausage"
+            app:cornerRadius="20dp" />
+    </TableRow>
+
+    <EditText
+        android:id="@+id/editTextTopping4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Topping4" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/buttonOrderPage2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#FF9800"
+            android:gravity="center"
+            android:text="Order Page"
+            android:textColor="#000000"
+            app:cornerRadius="20dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/buttonDelete2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#F44336"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="#000000"
+            app:cornerRadius="20dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#FFEB3B"
+            android:gravity="center"
+            android:text="Update"
+            android:textColor="#000000"
+            app:cornerRadius="20dp" />
+    </TableRow>
+
+</LinearLayout>

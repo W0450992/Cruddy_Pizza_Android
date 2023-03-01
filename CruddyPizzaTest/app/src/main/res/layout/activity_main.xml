@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/repeatingpizza"
+    android:tileMode="repeat"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4">
+
+                    <TextView
+                        android:id="@+id/textViewMarksPizza"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:background="#FF5722"
+                        android:gravity="center"
+                        android:text="@string/title" />
+                </TableRow>
+
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/buttonFrench"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#B403A9F4"
+                        android:gravity="center"
+                        android:text="@string/buttonFrench"
+                        android:textColor="#FFFFFF"
+                        app:cornerRadius="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6">
+
+                    <EditText
+                        android:id="@+id/editTextTextPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#A6FF9800"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="@string/editTextEnterName"
+                        android:inputType="textPersonName" />
+                </TableRow>
+
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7">
+
+                    <TextView
+                        android:id="@+id/textViewSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:background="#B4FF9800"
+                        android:gravity="center"
+                        android:text="Size" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:backgroundTint="#B5FFEB3B"
+                            android:text="Small" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFDFD"
+                            android:backgroundTint="#AEFFEB3B"
+                            android:text="Medium" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonLarge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:backgroundTint="#B0FFEB3B"
+                            android:text="Large" />
+                    </RadioGroup>
+                </TableRow>
+
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textViewToppings"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:background="#B4FFEB3B"
+                        android:gravity="center"
+                        android:text="@string/textViewToppings" />
+                </TableRow>
+
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textViewCheese"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:background="#B2FF9800"
+                        android:gravity="center"
+                        android:text="Cheese"
+                        app:cornerRadius="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/buttonAddCheese"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:backgroundTint="#AE9A9191"
+                        android:gravity="center"
+                        android:text="+"
+                        app:cornerRadius="10dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textViewCheeseNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="0" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/buttonSubCheese"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:backgroundTint="#B29A9191"
+                        android:gravity="center"
+                        android:text="-"
+                        app:cornerRadius="10dp" />
+                </TableRow>
+
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TableRow
+                        android:layout_width="64dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textViewPepper"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:autoSizeTextType="uniform"
+                            android:background="#B2FF9800"
+                            android:gravity="center"
+                            android:text="Pepperoni" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="64dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/buttonAddPep"
+                            android:layout_width="48dp"
+                            android:layout_height="match_parent"
+                            android:autoSizeTextType="uniform"
+                            android:backgroundTint="#999A9191"
+                            android:gravity="center"
+                            android:text="+"
+                            app:cornerRadius="10dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="64dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textViewPepNum"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:autoSizeTextType="uniform"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="0" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="64dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/buttonSubPep"
+                            android:layout_width="48dp"
+                            android:layout_height="match_parent"
+                            android:autoSizeTextType="uniform"
+                            android:backgroundTint="#A49A9191"
+                            android:gravity="center"
+                            android:text="-"
+                            app:cornerRadius="10dp" />
+
+                    </TableRow>
+
+                </TableRow>
+            </TableRow>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textViewOlives"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:background="#B0FF9800"
+                        android:gravity="center"
+                        android:text="Olives" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/buttonAddOlive"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:backgroundTint="#A19A9191"
+                        android:gravity="center"
+                        android:text="+"
+                        app:cornerRadius="10dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textViewOliveNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="0" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/buttonSubOlive"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:backgroundTint="#9A9A9191"
+                        android:gravity="center"
+                        android:text="-"
+                        app:cornerRadius="10dp" />
+                </TableRow>
+
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textViewSausa"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:background="#B7FF9800"
+                        android:gravity="center"
+                        android:text="Sausage" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/buttonAddSausa"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:backgroundTint="#A89A9191"
+                        android:gravity="center"
+                        android:text="+"
+                        app:cornerRadius="10dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textViewSausaNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="0" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/buttonSubSausa"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:autoSizeTextType="uniform"
+                        android:backgroundTint="#999A9191"
+                        android:gravity="center"
+                        android:text="-"
+                        app:cornerRadius="10dp" />
+                </TableRow>
+
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <Button
+                        android:id="@+id/buttonView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#03A9F4"
+                        android:gravity="center"
+                        android:text="View"
+                        android:textColor="#000000"
+                        app:cornerRadius="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <Button
+                        android:id="@+id/buttonSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#95DA46"
+                        android:gravity="center"
+                        android:text="Save"
+                        android:textColor="#000000"
+                        app:cornerRadius="20dp" />
+                </TableRow>
+
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TableRow
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </TableRow>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

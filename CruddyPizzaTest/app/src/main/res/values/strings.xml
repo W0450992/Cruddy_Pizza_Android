@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Pizza Order</string>
+    <string name="title">Marks Pizza</string>
+    <string name="buttonFrench">French</string>
+    <string name="buttonAnglaisButton">Anglais</string>
+    <string name="editTextEnterName">Enter Name</string>
+    <string name="editTextEntrezLeNom">Entrez Le Nom</string>
+    <string name="textViewSize">Size</string>
+    <string name="textViewSizeFrench">Taille</string>
+    <string name="textViewToppings">Toppings</string>
+    <string name="textViewToppingsFrench">Garnitures</string>
+
+    <string-array name="English_Array">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Cheese</item>
+        <item>Pepperoni</item>
+        <item>Olives</item>
+        <item>Bacon</item>
+        <item>Sausage</item>
+        <item>View</item>
+        <item>Change</item>
+        <item>Save</item>
+        <item>Delete</item>
+    </string-array>
+
+    <string-array name="French_Array">
+        <item>Petite</item>
+        <item>Moyene</item>
+        <item>Grande</item>
+        <item>Fromage</item>
+        <item>Pepperoni</item>
+        <item>Olives</item>
+        <item>Lard</item>
+        <item>Saucison</item>
+        <item>Voir</item>
+        <item>Monnaie</item>
+        <item>Enrigistrer</item>
+        <item>Effacer</item>
+    </string-array>
+</resources>
